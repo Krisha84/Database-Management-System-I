@@ -1,5 +1,4 @@
--- LAB_5 :
-			(LIKE / NOT LIKE)
+-- LAB_5 : (LIKE / NOT LIKE)
 --PART_A :
 
 CREATE TABLE STUDENT(
@@ -21,7 +20,7 @@ INSERT INTO STUDENT VALUES
 
 SELECT *FROM STUDENT
 
--- 1. Display the name of students whose name starts with ‘k’.
+-- 1. Display the name of students whose name starts with â€˜kâ€™.
 	SELECT FIRST_NAME 
 	FROM STUDENT 
 	WHERE FIRST_NAME LIKE 'K%'
@@ -37,15 +36,15 @@ SELECT *FROM STUDENT
 	FROM STUDENT 
 	WHERE CITY LIKE '_____%A' 
 
--- 4. Display all the students whose last name ends with ‘tel’.
+-- 4. Display all the students whose last name ends with â€˜telâ€™.
 	SELECT *FROM STUDENT 
 	WHERE LAST_NAME LIKE '%TEL'
 
--- 5. Display all the students whose first name starts with ‘ha’ & ends with‘t’.
+-- 5. Display all the students whose first name starts with â€˜haâ€™ & ends withâ€˜tâ€™.
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE 'HA%T'
 
--- 6. Display all the students whose first name starts with ‘k’ and third character is ‘y’.
+-- 6. Display all the students whose first name starts with â€˜kâ€™ and third character is â€˜yâ€™.
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE 'K_Y%'
 
@@ -53,11 +52,11 @@ SELECT *FROM STUDENT
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE '_____' AND WEBSITE IS NULL
 
--- 8. Display all the students whose last name consist of ‘jer’. 
+-- 8. Display all the students whose last name consist of â€˜jerâ€™. 
 	SELECT *FROM STUDENT 
 	WHERE LAST_NAME LIKE '%JER%'
 
--- 9. Display all the students whose city name starts with either ‘r’ or ‘b’.
+-- 9. Display all the students whose city name starts with either â€˜râ€™ or â€˜bâ€™.
 	SELECT *FROM STUDENT 
 	WHERE CITY LIKE '[RB]%'
 
@@ -70,7 +69,7 @@ SELECT *FROM STUDENT
 	SELECT *FROM STUDENT
 	WHERE FIRST_NAME LIKE '[A-H]%'
 
--- 12. Display all the students whose name’s second character is vowel.
+-- 12. Display all the students whose nameâ€™s second character is vowel.
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE '_[AEIOU]%'
 
@@ -79,11 +78,11 @@ SELECT *FROM STUDENT
 	FROM STUDENT
 	WHERE WEBSITE IS NULL AND FIRST_NAME LIKE '_____%'
 
--- 14. Display all the students whose last name starts with ‘Pat’. 
+-- 14. Display all the students whose last name starts with â€˜Patâ€™. 
 	SELECT *FROM STUDENT 
 	WHERE LAST_NAME LIKE 'PAT%'
 
--- 15. Display all the students whose city name does not starts with ‘b’.
+-- 15. Display all the students whose city name does not starts with â€˜bâ€™.
 	SELECT *FROM STUDENT 
 	WHERE CITY NOT LIKE 'B%'
 
@@ -95,11 +94,11 @@ SELECT *FROM STUDENT
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE '[AH]%'
 
--- 2. Display all the students whose name’s second character is vowel and of and start with H.
+-- 2. Display all the students whose nameâ€™s second character is vowel and of and start with H.
 	SELECT *FROM STUDENT 
 	WHERE FIRST_NAME LIKE 'H[AEIOU]%'
 
--- 3. Display all the students whose last name does not ends with ‘a’.
+-- 3. Display all the students whose last name does not ends with â€˜aâ€™.
 	SELECT *FROM STUDENT
 	WHERE LAST_NAME NOT LIKE '%A'
 
