@@ -50,7 +50,7 @@ SELECT *FROM EMPLOYEE_MASTER
 DELETE FROM EMPLOYEE_MASTER 
 WHERE SALARY>=14000
 
--- 2. Delete all the Employees who belongs to ‘RAJKOT’ city.
+-- 2. Delete all the Employees who belongs to â€˜RAJKOTâ€™ city.
 DELETE FROM EMPLOYEE_MASTER 
 WHERE CITY='RAJKOT'
 
@@ -72,4 +72,5 @@ DELETE FROM EMPLOYEE_MASTER WHERE CITY IS NOT NULL
 -- 7. Delete all the records of Employee_MASTER table. (Use Truncate)
 TRUNCATE TABLE EMPLOYEE_MASTER
 
--- 8. Remove Employee_MASTER table. (Use Drop)DROP TABLE EMPLOYEE_MASTER
+-- 8. Remove Employee_MASTER table.
+DROP TABLE EMPLOYEE_MASTER
